@@ -1,0 +1,126 @@
+{
+    "sourceFile": "style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 27,
+            "patches": [
+                {
+                    "date": 1743010912511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743012789190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,5 +35,28 @@\n     background-color: #cdc1b5;\r\n     border: 5px solid #bbada0;\r\n     margin: 0 auto;\r\n     display: flex;\r\n-}\n\\ No newline at end of file\n+    flex-wrap: wrap;\r\n+    border-radius: 0.5em;\r\n+}\r\n+.box {\r\n+    width: 97.5px;\r\n+    height: 97.5px;\r\n+    border: 5px solid #bbada0;\r\n+    font-size: 40px;\r\n+}\r\n+.cover-screen {\r\n+    position: absolute;\r\n+    top: 0;\r\n+    left: 0;\r\n+    background-color: #faf8ef ;\r\n+    height: 100%;\r\n+    width: 100%;\r\n+    display: flex;\r\n+    flex-direction: column;\r\n+    justify-content: center;\r\n+    align-items: center;\r\n+}\r\n+#start-button {\r\n+    background-color: #;\r\n+}\r\n"
+                },
+                {
+                    "date": 1743012801241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     height: 97.5px;\r\n     border: 5px solid #bbada0;\r\n     font-size: 40px;\r\n }\r\n-.cover-screen {\r\n+/* .cover-screen {\r\n     position: absolute;\r\n     top: 0;\r\n     left: 0;\r\n     background-color: #faf8ef ;\r\n@@ -55,8 +55,8 @@\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n     align-items: center;\r\n-}\r\n+} */\r\n #start-button {\r\n     background-color: #;\r\n }\r\n"
+                },
+                {
+                    "date": 1743012817387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     height: 97.5px;\r\n     border: 5px solid #bbada0;\r\n     font-size: 40px;\r\n }\r\n-/* .cover-screen {\r\n+.cover-screen {\r\n     position: absolute;\r\n     top: 0;\r\n     left: 0;\r\n     background-color: #faf8ef ;\r\n@@ -55,8 +55,8 @@\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n     align-items: center;\r\n-} */\r\n+}\r\n #start-button {\r\n     background-color: #;\r\n }\r\n"
+                },
+                {
+                    "date": 1743012823581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,15 +48,15 @@\n .cover-screen {\r\n     position: absolute;\r\n     top: 0;\r\n     left: 0;\r\n-    background-color: #faf8ef ;\r\n+    /* background-color: #faf8ef ;\r\n     height: 100%;\r\n     width: 100%;\r\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n-    align-items: center;\r\n+    align-items: center; */\r\n }\r\n #start-button {\r\n     background-color: #;\r\n }\r\n"
+                },
+                {
+                    "date": 1743012828770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n .cover-screen {\r\n     position: absolute;\r\n     top: 0;\r\n     left: 0;\r\n-    /* background-color: #faf8ef ;\r\n+    /* /* background-color: #faf8ef ; */\r\n     height: 100%;\r\n     width: 100%;\r\n     display: flex;\r\n     flex-direction: column;\r\n"
+                },
+                {
+                    "date": 1743012847854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,15 +48,15 @@\n .cover-screen {\r\n     position: absolute;\r\n     top: 0;\r\n     left: 0;\r\n-    /* /* background-color: #faf8ef ; */\r\n+    background-color: #faf8ef ;\r\n     height: 100%;\r\n     width: 100%;\r\n-    display: flex;\r\n+    /* display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n-    align-items: center; */\r\n+    align-items: center;  */\r\n }\r\n #start-button {\r\n     background-color: #;\r\n }\r\n"
+                },
+                {
+                    "date": 1743012853951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,12 +51,12 @@\n     left: 0;\r\n     background-color: #faf8ef ;\r\n     height: 100%;\r\n     width: 100%;\r\n-    /* display: flex;\r\n+    display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n-    align-items: center;  */\r\n+    align-items: center; \r\n }\r\n #start-button {\r\n     background-color: #;\r\n }\r\n"
+                },
+                {
+                    "date": 1743012944555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,6 +57,15 @@\n     justify-content: center;\r\n     align-items: center; \r\n }\r\n #start-button {\r\n-    background-color: #;\r\n+    background-color: #8f7a66;\r\n+    padding: 1em 2em;\r\n+    border: none;\r\n+    border-radius: 0.5em;\r\n+    font-size: 1em;\r\n+    letter-spacing: 0.2px;\r\n+    color: #ffffff;\r\n }\r\n+.hide {\r\n+    display: none;\r\n+}\r\n"
+                },
+                {
+                    "date": 1745746555870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,71 +0,0 @@\n-* {\r\n-    padding: 0;\r\n-    margin: 0;\r\n-    box-sizing: border-box;\r\n-    font-family: \"Poppins\", sans-serif;\r\n-}\r\n-\r\n-body {\r\n-    background-color: #faf8ef;\r\n-}\r\n-.heading {\r\n-    display: flex;\r\n-    align-items: center;\r\n-    justify-content: space-between;\r\n-}\r\n-h1 {\r\n-    color: #776e65;\r\n-    font-size: 4em;;\r\n-}\r\n-.container {\r\n-    position: absolute;\r\n-    transform: translate(-50%, -50%);\r\n-    left: 50%;\r\n-    top: 50%;\r\n-}\r\n-.score-container {\r\n-    color: #776e65;\r\n-}\r\n-#score {\r\n-    font-weight: 600;\r\n-}\r\n-.grid {\r\n-    width: 25em;\r\n-    height: 25em;\r\n-    background-color: #cdc1b5;\r\n-    border: 5px solid #bbada0;\r\n-    margin: 0 auto;\r\n-    display: flex;\r\n-    flex-wrap: wrap;\r\n-    border-radius: 0.5em;\r\n-}\r\n-.box {\r\n-    width: 97.5px;\r\n-    height: 97.5px;\r\n-    border: 5px solid #bbada0;\r\n-    font-size: 40px;\r\n-}\r\n-.cover-screen {\r\n-    position: absolute;\r\n-    top: 0;\r\n-    left: 0;\r\n-    background-color: #faf8ef ;\r\n-    height: 100%;\r\n-    width: 100%;\r\n-    display: flex;\r\n-    flex-direction: column;\r\n-    justify-content: center;\r\n-    align-items: center; \r\n-}\r\n-#start-button {\r\n-    background-color: #8f7a66;\r\n-    padding: 1em 2em;\r\n-    border: none;\r\n-    border-radius: 0.5em;\r\n-    font-size: 1em;\r\n-    letter-spacing: 0.2px;\r\n-    color: #ffffff;\r\n-}\r\n-.hide {\r\n-    display: none;\r\n-}\r\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1745746749907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,17 @@\n-\n+body {\r\n+    font-family: Arial, Helvetica, sans-serif;\r\n+    text-align: center;\r\n+\r\n+}\r\n+\r\n+hr {\r\n+    width: 500px;\r\n+}\r\n+\r\n+#board {\r\n+    width: 400px;\r\n+    height: 400px;\r\n+\r\n+    background-color: #cdc1b5;\r\n+    border: 6px solid #bbada0;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1745747511646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,21 @@\n     height: 400px;\r\n \r\n     background-color: #cdc1b5;\r\n     border: 6px solid #bbada0;\r\n+\r\n+    margin: 0 auto;\r\n+    display: flex;\r\n+    flex-wrap: wrap;\r\n+}\r\n+\r\n+.tile {\r\n+    width: 90px;\r\n+    height: 90px;\r\n+    border: 9px solid #bbada0;\r\n+\r\n+    font-size: 40px;\r\n+    font-weight: bold;\r\n+    display: flexx;\r\n+    justify-content: center;\r\n+    align-items: center;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1745747627519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     width: 400px;\r\n     height: 400px;\r\n \r\n     background-color: #cdc1b5;\r\n-    border: 6px solid #bbada0;\r\n+    border: 5px solid #bbada0;\r\n \r\n     margin: 0 auto;\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n"
+                },
+                {
+                    "date": 1745747874688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,12 +22,28 @@\n \r\n .tile {\r\n     width: 90px;\r\n     height: 90px;\r\n-    border: 9px solid #bbada0;\r\n+    border: 5px solid #bbada0;\r\n \r\n     font-size: 40px;\r\n     font-weight: bold;\r\n     display: flexx;\r\n     justify-content: center;\r\n     align-items: center;\r\n+}\r\n+\r\n+.x2 {\r\n+    background-color: #eee4da;\r\n+    color: #727371;\r\n+\r\n+}\r\n+.x4 {\r\n+    background-color: #ece0ca;\r\n+    color: #727371;\r\n+    \r\n+}\r\n+.x2 {\r\n+    background-color: #f4b17a;\r\n+    color: #white;\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1745747929783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,7 +43,7 @@\n     \r\n }\r\n .x2 {\r\n     background-color: #f4b17a;\r\n-    color: #white;\r\n+    color: white;\r\n     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1745748001047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n     background-color: #ece0ca;\r\n     color: #727371;\r\n     \r\n }\r\n-.x2 {\r\n+.x8{\r\n     background-color: #f4b17a;\r\n     color: white;\r\n     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1745748311603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,6 +44,45 @@\n }\r\n .x8{\r\n     background-color: #f4b17a;\r\n     color: white;\r\n-    \r\n+}\r\n+.x16{\r\n+    background-color: #f59575;\r\n+    color: white;\r\n+}\r\n+.x32{\r\n+    background-color: #f57c57;\r\n+    color: white;\r\n+}\r\n+.x64{\r\n+    background-color: #f65d3b;\r\n+    color: white;\r\n+}\r\n+.x128{\r\n+    background-color: #edce71;\r\n+    color: white;\r\n+}\r\n+.x256{\r\n+    background-color: #edcc63;\r\n+    color: white;\r\n+}\r\n+.x512{\r\n+    background-color: #edc651;\r\n+    color: white;\r\n+}\r\n+.x1024{\r\n+    background-color: #eec744;\r\n+    color: white;\r\n+}\r\n+.x2048{\r\n+    background-color: #ecc230;\r\n+    color: white;\r\n+}\r\n+.x4096{\r\n+    background-color: #fe3d3d;\r\n+    color: white;\r\n+}\r\n+.x8192{\r\n+    background-color: #ff2020;\r\n+    color: white;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746110041105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     border: 5px solid #bbada0;\r\n \r\n     font-size: 40px;\r\n     font-weight: bold;\r\n-    display: flexx;\r\n+    display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1746110097386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     width: 400px;\r\n     height: 400px;\r\n \r\n     background-color: #cdc1b5;\r\n-    border: 5px solid #bbada0;\r\n+    border: 6px solid #bbada0;\r\n \r\n     margin: 0 auto;\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n"
+                },
+                {
+                    "date": 1746110171172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     width: 400px;\r\n     height: 400px;\r\n \r\n     background-color: #cdc1b5;\r\n-    border: 6px solid #bbada0;\r\n+    border: 10px solid #bbada0;\r\n \r\n     margin: 0 auto;\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n"
+                },
+                {
+                    "date": 1746110176653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     width: 400px;\r\n     height: 400px;\r\n \r\n     background-color: #cdc1b5;\r\n-    border: 10px solid #bbada0;\r\n+    border: 0px solid #bbada0;\r\n \r\n     margin: 0 auto;\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n"
+                },
+                {
+                    "date": 1746110184330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     width: 400px;\r\n     height: 400px;\r\n \r\n     background-color: #cdc1b5;\r\n-    border: 0px solid #bbada0;\r\n+    border: 5pxpx solid #bbada0;\r\n \r\n     margin: 0 auto;\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n"
+                },
+                {
+                    "date": 1746110193126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     width: 400px;\r\n     height: 400px;\r\n \r\n     background-color: #cdc1b5;\r\n-    border: 5pxpx solid #bbada0;\r\n+    border: 6px solid #bbada0;\r\n \r\n     margin: 0 auto;\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n"
+                },
+                {
+                    "date": 1746110199730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     width: 400px;\r\n     height: 400px;\r\n \r\n     background-color: #cdc1b5;\r\n-    border: 6px solid #bbada0;\r\n+    border: 0px solid #bbada0;\r\n \r\n     margin: 0 auto;\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n"
+                },
+                {
+                    "date": 1746110208785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     width: 400px;\r\n     height: 400px;\r\n \r\n     background-color: #cdc1b5;\r\n-    border: 0px solid #bbada0;\r\n+    border: px solid #bbada0;\r\n \r\n     margin: 0 auto;\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n@@ -22,9 +22,9 @@\n \r\n .tile {\r\n     width: 90px;\r\n     height: 90px;\r\n-    border: 5px solid #bbada0;\r\n+    border: 6px solid #bbada0;\r\n \r\n     font-size: 40px;\r\n     font-weight: bold;\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1746110214910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n \r\n .tile {\r\n     width: 90px;\r\n     height: 90px;\r\n-    border: 6px solid #bbada0;\r\n+    border: 5.5px solid #bbada0;\r\n \r\n     font-size: 40px;\r\n     font-weight: bold;\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1746110220779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     width: 400px;\r\n     height: 400px;\r\n \r\n     background-color: #cdc1b5;\r\n-    border: px solid #bbada0;\r\n+    border: 6px solid #bbada0;\r\n \r\n     margin: 0 auto;\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n"
+                },
+                {
+                    "date": 1746110229198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     width: 400px;\r\n     height: 400px;\r\n \r\n     background-color: #cdc1b5;\r\n-    border: 6px solid #bbada0;\r\n+    border: 0px solid #bbada0;\r\n \r\n     margin: 0 auto;\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n@@ -22,9 +22,9 @@\n \r\n .tile {\r\n     width: 90px;\r\n     height: 90px;\r\n-    border: 5.5px solid #bbada0;\r\n+    border: 5px solid #bbada0;\r\n \r\n     font-size: 40px;\r\n     font-weight: bold;\r\n     display: flex;\r\n"
+                }
+            ],
+            "date": 1743010912511,
+            "name": "Commit-0",
+            "content": "* {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n    font-family: \"Poppins\", sans-serif;\r\n}\r\n\r\nbody {\r\n    background-color: #faf8ef;\r\n}\r\n.heading {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n}\r\nh1 {\r\n    color: #776e65;\r\n    font-size: 4em;;\r\n}\r\n.container {\r\n    position: absolute;\r\n    transform: translate(-50%, -50%);\r\n    left: 50%;\r\n    top: 50%;\r\n}\r\n.score-container {\r\n    color: #776e65;\r\n}\r\n#score {\r\n    font-weight: 600;\r\n}\r\n.grid {\r\n    width: 25em;\r\n    height: 25em;\r\n    background-color: #cdc1b5;\r\n    border: 5px solid #bbada0;\r\n    margin: 0 auto;\r\n    display: flex;\r\n}"
+        }
+    ]
+}

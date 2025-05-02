@@ -1,0 +1,58 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1743008229852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743008360809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,14 +11,22 @@\n     <div class=\"container hide\">\r\n         <div class=\"heading\">\r\n             <h1>2048</h1>\r\n             <div class=\"score-container\">\r\n+                Score:\r\n                 <span class=\"score\">0</span>\r\n             </div>\r\n         </div>\r\n+        <div class=\"grid\"></div>\r\n     </div>\r\n \r\n+    <div class=\"cover-screen\">\r\n+        <h2 id=\"over-text\" class=\"hide\">Game Over</h2>\r\n+        <p id=\"result\"></p>\r\n+        <button id=\"start-button\">Start Game</button>\r\n+    </div>\r\n \r\n \r\n+\r\n     <script src=\"script.js\"></script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1745746550233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,31 +2,10 @@\n <html lang=\"en\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>2048 Game</title>\r\n-    <link rel=\"stylesheet\" href=\"style.css\">\r\n+    <title>Document</title>\r\n </head>\r\n <body>\r\n     \r\n-    <div class=\"container hide\">\r\n-        <div class=\"heading\">\r\n-            <h1>2048</h1>\r\n-            <div class=\"score-container\">\r\n-                Score:\r\n-                <span class=\"score\">0</span>\r\n-            </div>\r\n-        </div>\r\n-        <div class=\"grid\"></div>\r\n-    </div>\r\n-\r\n-    <div class=\"cover-screen\">\r\n-        <h2 id=\"over-text\" class=\"hide\">Game Over</h2>\r\n-        <p id=\"result\"></p>\r\n-        <button id=\"start-button\">Start Game</button>\r\n-    </div>\r\n-\r\n-\r\n-\r\n-    <script src=\"script.js\"></script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1745746591975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,15 @@\n <html lang=\"en\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n+    <title>2048 Game</title>\r\n+    <link rel=\"stylesheet\" href=\"style.css\">\r\n </head>\r\n <body>\r\n     \r\n+\r\n+\r\n+\r\n+    <script src=\"script.js\"></script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1745746667267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,12 @@\n     <title>2048 Game</title>\r\n     <link rel=\"stylesheet\" href=\"style.css\">\r\n </head>\r\n <body>\r\n-    \r\n+    <h1>2048</h1>\r\n+    <hr>\r\n+    <h2>Score: <span id=\"score\">0</span></h2>\r\n+    <div id=\"board\"></div>\r\n \r\n \r\n \r\n     <script src=\"script.js\"></script>\r\n"
+                },
+                {
+                    "date": 1745747552443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,13 @@\n <body>\r\n     <h1>2048</h1>\r\n     <hr>\r\n     <h2>Score: <span id=\"score\">0</span></h2>\r\n-    <div id=\"board\"></div>\r\n+    <div id=\"board\">\r\n+        <div class=\"tile\">2</div>\r\n+        <div class=\"tile\">4</div>\r\n+        <div class=\"tile\">8</div>\r\n+    </div>\r\n \r\n \r\n \r\n     <script src=\"script.js\"></script>\r\n"
+                },
+                {
+                    "date": 1745747570180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     <div id=\"board\">\r\n         <div class=\"tile\">2</div>\r\n         <div class=\"tile\">4</div>\r\n         <div class=\"tile\">8</div>\r\n+        <div class=\"tile\">8</div>\r\n     </div>\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1745747579274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     <div id=\"board\">\r\n         <div class=\"tile\">2</div>\r\n         <div class=\"tile\">4</div>\r\n         <div class=\"tile\">8</div>\r\n-        <div class=\"tile\">8</div>\r\n+        <div class=\"tile\">8</div><div class=\"tile\">8</div><div class=\"tile\">8</div><div class=\"tile\">8</div><div class=\"tile\">8</div><div class=\"tile\">8</div><div class=\"tile\">8</div>\r\n     </div>\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1745747609012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     <div id=\"board\">\r\n         <div class=\"tile\">2</div>\r\n         <div class=\"tile\">4</div>\r\n         <div class=\"tile\">8</div>\r\n-        <div class=\"tile\">8</div><div class=\"tile\">8</div><div class=\"tile\">8</div><div class=\"tile\">8</div><div class=\"tile\">8</div><div class=\"tile\">8</div><div class=\"tile\">8</div>\r\n+        \r\n     </div>\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1745747891798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n     <h1>2048</h1>\r\n     <hr>\r\n     <h2>Score: <span id=\"score\">0</span></h2>\r\n     <div id=\"board\">\r\n-        <div class=\"tile\">2</div>\r\n-        <div class=\"tile\">4</div>\r\n-        <div class=\"tile\">8</div>\r\n+        <div class=\"tile x2\">2</div>\r\n+        <div class=\"tile x4\">4</div>\r\n+        <div class=\"tile x8\">8</div>\r\n         \r\n     </div>\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1745748518987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,12 +10,10 @@\n     <h1>2048</h1>\r\n     <hr>\r\n     <h2>Score: <span id=\"score\">0</span></h2>\r\n     <div id=\"board\">\r\n-        <div class=\"tile x2\">2</div>\r\n-        <div class=\"tile x4\">4</div>\r\n-        <div class=\"tile x8\">8</div>\r\n         \r\n+        \r\n     </div>\r\n \r\n \r\n \r\n"
+                }
+            ],
+            "date": 1743008229852,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>2048 Game</title>\r\n    <link rel=\"stylesheet\" href=\"style.css\">\r\n</head>\r\n<body>\r\n    \r\n    <div class=\"container hide\">\r\n        <div class=\"heading\">\r\n            <h1>2048</h1>\r\n            <div class=\"score-container\">\r\n                <span class=\"score\">0</span>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n\r\n    <script src=\"script.js\"></script>\r\n</body>\r\n</html>"
+        }
+    ]
+}
